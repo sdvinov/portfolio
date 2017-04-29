@@ -1,6 +1,6 @@
 # Portfolio
 
-This repo is my portfolio site developed on [WordPress](https://wordpress.org) engine. For now, it is not available anywhere but here, but eventually it will be hosted somewhere like [DigitalOcean](https://www.digitalocean.com/). 
+This repo is my portfolio site developed on [WordPress](https://wordpress.org) engine. For now, it is not available anywhere but here, but eventually it will be hosted somewhere like [DigitalOcean](https://www.digitalocean.com/). This repo represents work I have done in the past, during school and before that. Each project is a separate page that contains information about this project (link to repo on Github, documentation, a little bit of history behind each one, technologies used, etc). 
 
 ## Contents
 In this portfolio, following repos are featured:
