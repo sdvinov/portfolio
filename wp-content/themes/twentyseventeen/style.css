@@ -4163,7 +4163,7 @@ img.custom-logo {
 
 /* Featured */
 
-.featured-work-item {
+/*.featured-work-item {
   display: inline;
   width: 200px;
   float: left;
@@ -4184,6 +4184,74 @@ img.custom-logo {
 
 .featured-work-item a {
   border:0;
+}*/
+
+.featured-work {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 2em;
+}
+
+.featured-work-item {
+  padding: 20px;
+  text-align: center;
+  background: #40206A;
+  border: 5px solid #FD893F;
+  transition: all .5s ease;
+  box-shadow: 0 0 5px #000;
+}
+
+.featured-work-item:hover {
+  transform: scale(1.05,1.05);
+}
+
+.featured-work-item a {
+  border:0;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
 }
 
 /* Sections */
@@ -4298,12 +4366,6 @@ footer {
 /* Misc */
 #first-h2 {
   padding-top: 0 !important;
-}
-
-.tech-icons {
-  display: inline;
-  float:left;
-  width: 25%;
 }
 
 /* Form */
