@@ -4128,3 +4128,184 @@ object {
 		padding: 0;
 	}
 }
+
+
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+/* Header */
+header.entry-header {
+  display: none;
+}
+
+div.custom-header {
+  background: url('https://pp.userapi.com/c837522/v837522363/4132b/cLQRIO3kP0w.jpg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img.custom-logo {
+  margin-top: 25px;
+}
+
+.colors-dark .site-description, .site-title a {
+  color: #fff !important;
+  text-shadow: 0 0 3px #000;
+}
+
+/* Featured */
+
+.featured-work-item {
+  display: inline;
+  width: 200px;
+  float: left;
+  text-align: center;
+  margin: 7px;
+  background: #666;
+  border: 10px solid #333;
+  transition: all .5s ease;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 239px;
+}
+
+.featured-work-item:hover {
+  transform: scale(1.05,1.05);
+}
+
+.featured-work-item a {
+  border:0;
+}
+
+.tech-icons {
+  display: inline;
+  float:left;
+  width: 25%;
+}
+
+/* Sections */
+
+.highlight-section {
+  border: 20px solid #333;
+  padding: 20px;
+  background: #555;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
+  margin-top: 20px;
+}
+
+.highlight-section p, .highlight-section ul {
+  margin-bottom: 0;
+}
+
+.highlight-section ul li {
+  margin-left: 20px
+}
+
+.highlight-section img {
+  transition: all .5s ease;
+}
+
+.highlight-section img:hover {
+  transform: scale(1.05,1.05);
+}
+
+#aboutme h2 {
+  padding-top: 100px
+}
+
+.my-photo {
+  width: 100%;
+  display: block;
+  border: 2px solid #333;
+}
+
+.my-photo:hover {
+  transform: scale(1,1) !important;
+}
+
+/* Headers */
+
+h2 {
+  border-bottom: 5px solid #fff;
+  text-align: center;
+  padding: 10px !important;
+  font-weight: bold;
+  padding-top: 100px !important;
+}
+
+/* Navigation */
+
+.navigation-top {
+  border: 0;
+  background: #333 !important;
+  font-size: 1.5em;
+  box-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+}
+
+.navigation-top a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul#top-menu {
+  text-align: center;
+  background: #333;
+}
+
+/* Footer */
+
+footer {
+  background: #333;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer ul {
+  float: left;
+  margin-left: 100px;
+}
+
+footer ul li {
+  list-style-type: none;
+  font-size: 1.3em !important;
+  padding-bottom: 10px;
+}
+
+footer {
+  font-size: 1.3em !important;
+  box-shadow: 0 0 5px #000;
+}
+
+.copy {
+  text-align: center;
+}
+
+/* Misc */
+#first-h2 {
+  padding-top: 0 !important;
+}
+
+/* Form */
+.wpcf7-submit {
+  width: 100%;
+  font-size: 1.3em !important;
+}
+
+input[name="your-name"] {
+  margin-top: 20px;
+}
+
+/* Project info */
+.project-info  li {
+  list-style-type: none;
+  font-size: 2em;
+  padding:
+}
