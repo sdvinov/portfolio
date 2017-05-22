@@ -4197,13 +4197,22 @@ img.custom-logo {
   text-align: center;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40206a+0,5933a9+50,5933a9+51,40206a+100 */
 	background: #40206a; /* Old browsers */
-	background: -moz-linear-gradient(top, #40206a 0%, #5933a9 50%, #5933a9 51%, #40206a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #40206a 0%,#5933a9 50%,#5933a9 51%,#40206a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #40206a 0%,#5933a9 50%,#5933a9 51%,#40206a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, #40206a 0%, #5933a9 50%, #40206a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #40206a 0%, #5933a9 50%, #40206a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #40206a 0%, #5933a9 50%, #40206a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40206a', endColorstr='#40206a',GradientType=0 ); /* IE6-9 */
   border: 3px solid #95159E;
   transition: all .5s ease;
   box-shadow: inset 0 0 20px #000, 0 0 20px #000;
+}
+
+.featured-work-item a {
+	color: #FB7A52 !important;
+	font-weight: bold;
+}
+
+.featured-work-item p {
+	margin: auto 0;
 }
 
 .featured-work-item img {
@@ -4212,10 +4221,11 @@ img.custom-logo {
 
 .featured-work-item:hover {
   transform: scale(1.05,1.05);
+	box-shadow: inset 0 0 5px #000, 0 0 20px #000;
 }
 
 .featured-work-item:hover img {
-  transform: scale(1.05,1.05);
+  transform: scale(1.1,1.1);
 }
 
 .featured-work-item a {
@@ -4246,7 +4256,7 @@ img.custom-logo {
 }
 
 .highlight-section img:hover {
-  transform: scale(1.05,1.05);
+  transform: scale(1.1,1.1);
 }
 
 #aboutme h2 {
@@ -4259,7 +4269,7 @@ img.custom-logo {
   border: 2px solid #333;
 }
 
-.my-photo:hover {
+.my-photo:hover, #tech-items img, #hcj {
   transform: scale(1,1) !important;
 }
 
@@ -4285,20 +4295,25 @@ h2::after {
 
 .navigation-top {
   border: 0;
-  background: #333 !important;
   font-size: 1.5em;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 2px 2px #000;
+	background: #311F59 !important;
   text-transform: uppercase;
 }
 
-.navigation-top a {
+.colors-dark .navigation-top a {
   padding-top: 0;
   padding-bottom: 0;
+	text-shadow: 0 0 2px #000;
+}
+
+.colors-dark .navigation-top .current-menu-item > a:hover, .colors-dark .navigation-top a:hover {
+  color: #FB7A52;
 }
 
 ul#top-menu {
   text-align: center;
-  background: #333;
+	background: none;
 }
 
 /* Footer */
@@ -4336,6 +4351,11 @@ footer {
   padding-top: 0 !important;
 }
 
+#tech-items {
+	display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
 /* Form */
 .wpcf7-submit {
   width: 100%;
@@ -4351,4 +4371,35 @@ input[name="your-name"] {
   list-style-type: none;
   font-size: 2em;
   padding:
+}
+
+/* Tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text, .tooltip .tooltip-text-first {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text-first {
+  bottom: -5%;
+  left: 38%;
+  width: 250px;
+}
+
+.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-text-first {
+  visibility: visible;
 }
