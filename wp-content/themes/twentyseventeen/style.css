@@ -4195,63 +4195,31 @@ img.custom-logo {
 .featured-work-item {
   padding: 20px;
   text-align: center;
-  background: #40206A;
-  border: 5px solid #FD893F;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40206a+0,5933a9+50,5933a9+51,40206a+100 */
+	background: #40206a; /* Old browsers */
+	background: -moz-linear-gradient(top, #40206a 0%, #5933a9 50%, #5933a9 51%, #40206a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #40206a 0%,#5933a9 50%,#5933a9 51%,#40206a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #40206a 0%,#5933a9 50%,#5933a9 51%,#40206a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40206a', endColorstr='#40206a',GradientType=0 ); /* IE6-9 */
+  border: 3px solid #95159E;
   transition: all .5s ease;
-  box-shadow: 0 0 5px #000;
+  box-shadow: inset 0 0 20px #000, 0 0 20px #000;
+}
+
+.featured-work-item img {
+  transition: all .5s ease;
 }
 
 .featured-work-item:hover {
   transform: scale(1.05,1.05);
 }
 
+.featured-work-item:hover img {
+  transform: scale(1.05,1.05);
+}
+
 .featured-work-item a {
   border:0;
-}
-
-.one {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.two {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.three {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.four {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.five {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.six {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.seven {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.eight {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.nine {
-  grid-column: 3;
-  grid-row: 3;
 }
 
 /* Sections */
@@ -4307,7 +4275,7 @@ h2::after {
   content: "";
   width: 100%;
   height: 5px;
-  background: #FD893F;
+  background: #FB7A52;
   display: block;
   margin: 0 auto;
   box-shadow: 0 0 5px #000;
