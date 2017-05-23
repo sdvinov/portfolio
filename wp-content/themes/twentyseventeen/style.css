@@ -4204,6 +4204,8 @@ img.custom-logo {
   border: 3px solid #95159E;
   transition: all .5s ease;
   box-shadow: inset 0 0 20px #000, 0 0 20px #000;
+	position: relative;
+  display: inline-block;
 }
 
 .featured-work-item a {
@@ -4215,16 +4217,15 @@ img.custom-logo {
 	margin: auto 0;
 }
 
-.featured-work-item img {
+.featured-work-item .tech-icon {
   transition: all .5s ease;
 }
 
 .featured-work-item:hover {
-  transform: scale(1.05,1.05);
 	box-shadow: inset 0 0 5px #000, 0 0 20px #000;
 }
 
-.featured-work-item:hover img {
+.featured-work-item:hover .tech-icon {
   transform: scale(1.1,1.1);
 }
 
@@ -4379,27 +4380,42 @@ input[name="your-name"] {
   display: inline-block;
 }
 
-.tooltip .tooltip-text, .tooltip .tooltip-text-first {
+.tooltip .tooltip-text, .tooltip .tooltip-text-first, .featured-work-item .featured-work-tooltip {
   visibility: hidden;
   width: 120px;
-  background-color: black;
+  background-color: #111;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 10px 0 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 105%;
-  left: 50%;
-  margin-left: -60px;
 }
 
-.tooltip:hover .tooltip-text-first {
+.featured-work-item .featured-work-tooltip {
+	top: calc(0%);
+  left: 0%;
+	box-shadow: 1px 1px 2px #000;
+	background: #111;
+	padding: 0;
+	width: 35px;
+	border-radius: 0 0 50% 0;
+	box-sizing: padding-box;
+	height: 33px;
+	padding-top: 3px;
+}
+
+.featured-work-item .featured-work-tooltip a {
+	display: block;
+	margin: 0 auto;
+}
+
+.tooltip:hover .tooltip-text-first  {
   bottom: -5%;
   left: 38%;
   width: 250px;
 }
 
-.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-text-first {
-  visibility: visible;
+.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-text-first, .featured-work-item:hover .featured-work-tooltip, .featured-work-tooltip:hover {
+  visibility: visible !important;
 }
